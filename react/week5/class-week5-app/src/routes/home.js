@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import {Link} from "react-router-dom";
 
+const profileName = "Omid"
+const url = `/profile/${profileName}` 
+
 export default class home extends Component {
     render() {
         return (
@@ -12,7 +15,7 @@ export default class home extends Component {
                     </li>
 
                     <li>
-                        <Link to="/Profile/test">Profile</Link>
+                        <Link to={url}>Profile</Link>
                     </li>
                 </ul>
             </div>
